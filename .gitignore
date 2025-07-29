@@ -1,7 +1,6 @@
 # Binary
 
 luasys
-*.exe
 *.out
 
 # IDE/Editor Settings
@@ -14,10 +13,6 @@ luasys
 
 .DS_Store
 Thumbs.db
-
-# Hidden files of backup
-
-*~
 
 # Others
 
