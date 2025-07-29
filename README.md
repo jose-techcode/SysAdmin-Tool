@@ -121,4 +121,4 @@ Feel free to open Issues or submit Pull Requests.
 
 # 10. License
 
-This project is licensed under the GPL.
+This project is licensed under the GPL 3.0.
