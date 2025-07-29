@@ -2,9 +2,9 @@
 
 Luasys tool .deb package.
 
-To install, download the .deb file and run:
+To install, download the .deb file, set the directory where the .deb package is and run:
 
-- sudo dpkg -i luasys_1.0.3.deb
+- sudo dpkg -i luasys_1.0.4.deb
 
 Then, run:
 
@@ -16,7 +16,8 @@ Run the CLI tool with administrator permissions (sudo) for proper operation.
 
 # 2. CLI Luasys
 
-The "CLI Luasys" is a multifunctional CLI tool for auditing, diagnosing, and monitoring hardware resources, such as CPU, GPU, motherboard, BIOS, memory (ram and swap), disk and partitions, battery, temperature, USB devices, host (kernel and operating system), net (network), and processes. You need administrator or sudo permission to run the CLI Luasys. By cloning the repository, you will have control of a local REST GET API.
+The "CLI Luasys" is a multifunctional CLI tool for auditing, diagnosing, and monitoring hardware resources, such as CPU, GPU, motherboard, BIOS, memory (ram and swap), disk and partitions,
+temperature, USB devices, host (kernel and operating system), net (network), and processes. You need administrator or sudo permission to run the CLI Luasys. By cloning the repository, you will have control of a local REST GET API.
 
 # 3. Features
 
@@ -35,8 +36,6 @@ The "CLI Luasys" is a multifunctional CLI tool for auditing, diagnosing, and mon
 - mem - Displays memory information.
 
 - disk - Displays disk information.
-
-- battery - Displays battery information.
 
 - temp - Displays temperature information.
 
@@ -75,8 +74,6 @@ The "CLI Luasys" is a multifunctional CLI tool for auditing, diagnosing, and mon
 - /mem - Memory path.
 
 - /disk - Disk path.
-
-- /battery - Battery path.
 
 - /temperature - Temperature path.
 
