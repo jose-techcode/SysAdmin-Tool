@@ -202,17 +202,6 @@ func Runsys() string {
 		out.WriteString(fmt.Sprintf("Device: %s  Mounted on: %s\n", part.Device, part.Mountpoint))
 	}
 
-	out.WriteString("\n-----BATTERY-----\n")
-
-	// Battery
-
-	battery_info, err := exec.Command("acpi").Output()
-	if err != nil {
-		out.WriteString("Error retrieving information about battery: " + err.Error() + "\n")
-		return out.String()
-	}
-	out.WriteString(string(battery_info))
-
 	out.WriteString("\n-----TEMPERATURE-----\n")
 
     // Temperature
