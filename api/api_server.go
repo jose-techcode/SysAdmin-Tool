@@ -61,13 +61,6 @@ func Server() {
         return c.String(http.StatusOK, diskInfo)
     })
 
-    // Battery
-
-    e.GET("/battery", func(c echo.Context) error {
-        batteryInfo := sysinfo.GetBATTERYInfo()
-        return c.String(http.StatusOK, batteryInfo)
-    })
-
     // Temperature
 
     e.GET("/temperature", func(c echo.Context) error {
