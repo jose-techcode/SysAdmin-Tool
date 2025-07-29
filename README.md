@@ -55,7 +55,7 @@ temperature, USB devices, host (kernel and operating system), net (network), and
 - Environment: Linux. 
 - Code versioning: Git.
 - Containerization: Docker.
-- Others: dmidecode, lspci, acpi, sensors, and lsusb.
+- Others: dmidecode, lspci, sensors, and lsusb.
 
 # 5. API
 
