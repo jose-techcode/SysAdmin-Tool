@@ -5,6 +5,8 @@ import(
 
 )
 
+// Function that calls everything
+
 func main() {
 	cmd.Execute()
 }
