@@ -9,7 +9,7 @@ luasys
 .idea/
 *.swp
 
-# File Systems
+# System files
 
 .DS_Store
 Thumbs.db
