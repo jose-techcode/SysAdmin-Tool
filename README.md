@@ -51,7 +51,7 @@ temperature, USB devices, host (kernel and operating system), net (network), and
 
 - Language: Golang.
 - Framework: Echo.
-- Libraries: Cobra.
+- Libraries: Cobra & Gopsutil.
 - Environment: Linux. 
 - Code versioning: Git.
 - Containerization: Docker.
