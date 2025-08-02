@@ -23,7 +23,7 @@ temperature, USB devices, host (kernel and operating system), net (network), and
 
 - luasys - Displays general information, excluding net and process.
 
-- api - Starts the API HTTP server. Localhost.
+- api - Starts the API HTTP server. Localhost. The api subcommand does not work inside Docker.
 
 - cpu - Displays CPU information.
 
@@ -115,10 +115,6 @@ trivy image luasys:latest
 
 docker run --rm --privileged luasys:latest (optional: < subcommand >)
 
-**Note:**
-
-The api subcommand does not work inside Docker.
-
 # 8.25. Run in Docker (with bash)
 
 - Execute this script to build docker image and scan with trivy tool
@@ -129,10 +125,6 @@ The api subcommand does not work inside Docker.
 
 docker run --rm --privileged luasys:latest (optional: < subcommand >)
 
-**Note:**
-
-The api subcommand does not work inside Docker.
-
 # 8.5. Run in Docker (with makefile)
 
 - Execute this makefile command to build docker image and scan with trivy tool
@@ -142,10 +134,6 @@ make image
 - Run the image with privileges
 
 docker run --rm --privileged luasys:latest (optional: < subcommand >)
-
-**Note:**
-
-The api subcommand does not work inside Docker.
 
 # 9. Contribute
 
