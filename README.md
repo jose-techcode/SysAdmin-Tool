@@ -50,10 +50,11 @@ temperature, USB devices, host (kernel and operating system), net (network), and
 # 4. Technologies
 
 - Language: Golang
+- Shell Scripting: Bash
 - Framework: Echo
 - Libraries: Cobra & Gopsutil
 - Environment: Linux
-- File format: Yaml
+- File format: Makefile & Yaml 
 - Code versioning: Git
 - Containerization: Docker
 - CI: Github Actions
@@ -106,17 +107,41 @@ cd CLI_Luasys
 
 docker build -t luasys:latest .
 
-- Run the image
+- Scan the docker image with trivy tool (false positives are expected)
 
-docker run --rm luasys:latest
+trivy image luasys:latest
 
-- Run the image with privileges (recommended)
+- Run the image with privileges
 
 docker run --rm --privileged luasys:latest (optional: < subcommand >)
 
-- Scan the docker image with trivy tool (false positives are expected)
+**Note:**
 
-trivy image luasys:latest 
+The api subcommand does not work inside Docker.
+
+# 8.25. Run in Docker (with bash)
+
+- Execute this script to build docker image and scan with trivy tool
+
+./docker_trivy.sh
+
+- Run the image with privileges
+
+docker run --rm --privileged luasys:latest (optional: < subcommand >)
+
+**Note:**
+
+The api subcommand does not work inside Docker.
+
+# 8.5. Run in Docker (with makefile)
+
+- Execute makefile command to build docker image and scan with trivy tool
+
+make image
+
+- Run the image with privileges
+
+docker run --rm --privileged luasys:latest (optional: < subcommand >)
 
 **Note:**
 
