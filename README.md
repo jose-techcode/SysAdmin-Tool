@@ -113,6 +113,10 @@ docker run --rm luasys:latest
 
 docker run --rm --privileged luasys:latest (optional: < subcommand >)
 
+- Scan the docker image with trivy tool (false positives are expected)
+
+trivy image luasys:latest 
+
 **Note:**
 
 The api subcommand does not work inside Docker.
