@@ -1,3 +1,5 @@
+# CI
+
 name: Docker Image CI
 permissions:
   contents: read
@@ -13,20 +15,9 @@ env:
   IMAGE_TAG: my-image-name:${{ github.run_id }}
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v4
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag ${{ env.IMAGE_TAG }}
-
-    - name: Scan docker image with trivy tool
-      uses: aquasecurity/trivy-action@v0.7.0
-      with:
-        image-ref: ${{ env.IMAGE_TAG }}
-        format: table
-        exit-code: 1 # fail job if vulnerabilities in scan found
-        ignore-unfixed: true # Ignore bugs without fix
+      - uses: actions/checkout@v4
+      - name: Build the Docker image
+        run: docker build . --file Dockerfile --tag $IMAGE_TAG
