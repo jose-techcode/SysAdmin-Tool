@@ -49,13 +49,15 @@ temperature, USB devices, host (kernel and operating system), net (network), and
 
 # 4. Technologies
 
-- Language: Golang.
-- Framework: Echo.
-- Libraries: Cobra & Gopsutil.
-- Environment: Linux. 
-- Code versioning: Git.
-- Containerization: Docker.
-- Others: dmidecode, lspci, sensors, and lsusb.
+- Language: Golang
+- Framework: Echo
+- Libraries: Cobra & Gopsutil
+- Environment: Linux
+- File format: Yaml
+- Code versioning: Git
+- Containerization: Docker
+- CI: Github Actions
+- Others: dmidecode, lspci, sensors, and lsusb
 
 # 5. API
 
