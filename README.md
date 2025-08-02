@@ -135,7 +135,7 @@ The api subcommand does not work inside Docker.
 
 # 8.5. Run in Docker (with makefile)
 
-- Execute makefile command to build docker image and scan with trivy tool
+- Execute this makefile command to build docker image and scan with trivy tool
 
 make image
 
