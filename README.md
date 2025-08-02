@@ -57,6 +57,7 @@ temperature, USB devices, host (kernel and operating system), net (network), and
 - Code versioning: Git
 - Containerization: Docker
 - CI: Github Actions
+- Scanner (docker image): Trivy
 - Others: dmidecode, lspci, sensors, and lsusb
 
 # 5. API
