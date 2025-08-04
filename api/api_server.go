@@ -82,10 +82,14 @@ func Server() {
         return c.String(http.StatusOK, hostInfo)
     })
 
+    // Net
+
     e.GET("/net", func(c echo.Context) error {
         netInfo := sysinfo.GetNETInfo()
         return c.String(http.StatusOK, netInfo)
     })
+
+    // Processes
 
     e.GET("/processes", func(c echo.Context) error {
         processesInfo := sysinfo.GetPROCESSESInfo()
