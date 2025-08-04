@@ -12,7 +12,7 @@ import (
 	"github.com/shirou/gopsutil/v3/mem"
 )
 
-// Função exportável
+// Exportable function
 
 func Runsys() string {
 	var out bytes.Buffer
