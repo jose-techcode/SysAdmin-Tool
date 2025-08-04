@@ -314,7 +314,7 @@ func Runsys() string {
 	return out.String()
 }
 
-// Raiz do comando
+// Command root
 
 var rootCmd = &cobra.Command{
 	Use: "luasys",
@@ -325,7 +325,7 @@ var rootCmd = &cobra.Command{
 	},
 }
 
-// Tratamento de erros
+// Error handling
 
 func Execute() {
 	if err := rootCmd.Execute(); err != nil {
