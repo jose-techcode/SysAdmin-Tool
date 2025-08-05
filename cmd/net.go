@@ -13,21 +13,7 @@ var netCmd = &cobra.Command{
 	Use: "net",
 	Short: "Exibe informações da rede.",
 	Run: func(cmd *cobra.Command, args []string) {
-
-		fmt.Printf("-----INPUT/OUTPUT-----")
-
-        // Net (IOCounters)
-
-		net_info_IOCounters, err := net.IOCounters(true)
-		if err != nil {
-			fmt.Println("Error retrieving information about Net.", err)
-			return
-		}
-
-		for _, IO := range net_info_IOCounters {
-			fmt.Printf("Input/Output: %s\n", IO.Name)
-		}
-		fmt.Println("")
+		
 		fmt.Println("-----TCP-----")
 
 		// Net (connections TCP)
