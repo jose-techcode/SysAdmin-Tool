@@ -2,7 +2,7 @@
 
 Luasys tool .deb package.
 
-- To install, download the .deb file, set the directory where the .deb package is and run:
+- To install, download the .deb file, navigate to the directory where the .deb file is located and run:
 
 sudo dpkg -i luasys_1.0.6.deb
 
@@ -10,7 +10,7 @@ sudo dpkg -i luasys_1.0.6.deb
 
 luasys --help
 
-- **Observation:**
+- **Note:**
 
 Run the CLI tool with administrator permissions (sudo) for proper operation.
 
@@ -25,27 +25,27 @@ temperature, USB devices, host (kernel and operating system), net (network), and
 
 - api - Starts the API HTTP server. Localhost. The api subcommand does not work inside Docker.
 
-- cpu - Displays CPU information.
+- cpu - Shows CPU information.
 
-- gpu - Displays GPU information.
+- gpu - Shows GPU information.
 
-- motherboard - Displays motherboard information.
+- motherboard - Shows motherboard information.
 
-- bios - Displays BIOS information.
+- bios - Shows BIOS information.
 
-- mem - Displays memory information.
+- mem - Shows memory information.
 
-- disk - Displays disk information.
+- disk - Shows disk information.
 
-- temp - Displays temperature information.
+- temp - Shows temperature information.
 
-- usb - Displays USB device information.
+- usb - Shows USB device information.
 
-- host - Displays kernel and operating system information.
+- host - Shows kernel and operating system information.
 
-- net - Displays network information.
+- net - Shows network information. It works only through subcommand.
 
-- processes - Displays process information.
+- processes - Shows process information. It works only through subcommand.
 
 # 4. Technologies
 
@@ -65,7 +65,7 @@ temperature, USB devices, host (kernel and operating system), net (network), and
 
 - GET: Displays auditing, diagnostic, and monitoring information via an HTTP server via API.
 
-- / - General path.
+- / - General path, excluding net and process.
 
 - /cpu - CPU path.
 
@@ -85,9 +85,9 @@ temperature, USB devices, host (kernel and operating system), net (network), and
 
 - /host - Kernel and operating system path.
 
-- /net - Network path.
+- /net - Network path. It only works through a specific route.
 
-- /processes - Process path.
+- /processes - Process path. It only works through a specific route.
 
 # 6. Clone the Repository
 
@@ -107,7 +107,7 @@ cd CLI_Luasys
 
 docker build -t luasys:latest .
 
-- Scan the docker image with trivy tool (false positives are expected)
+- Scan the docker image with trivy (false positives are expected)
 
 trivy image luasys:latest
 
@@ -115,7 +115,7 @@ trivy image luasys:latest
 
 docker run --rm --privileged luasys:latest (optional: < subcommand >)
 
-# 8.25. Run in Docker (with bash)
+# 8.1. Run in Docker (with bash)
 
 - Execute this script to build docker image and scan with trivy tool
 
@@ -125,7 +125,7 @@ docker run --rm --privileged luasys:latest (optional: < subcommand >)
 
 docker run --rm --privileged luasys:latest (optional: < subcommand >)
 
-# 8.5. Run in Docker (with makefile)
+# 8.2. Run in Docker (with makefile)
 
 - Execute this makefile command to build docker image and scan with trivy tool
 
@@ -143,6 +143,6 @@ Feel free to open Issues or submit Pull Requests.
 
 This project is licensed under the GPL 3.0.
 
-# 11. Observations
+# 11. Notes
 
 In the future, maybe goreleaser will be added to manage package versions, mainly for a possible cross-platform idea as well.
