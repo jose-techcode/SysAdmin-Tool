@@ -20,10 +20,6 @@ Thumbs.db
 *.sock
 *.db
 
-# Hidden files of backup
-
-*~
-
 # Git
 
 .git/
