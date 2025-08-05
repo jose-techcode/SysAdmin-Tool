@@ -94,5 +94,7 @@ func Server() {
         return c.String(http.StatusOK, processesInfo)
     })
 
+    // Start the server
+
     e.Logger.Fatal(e.Start(":8000"))
 }
