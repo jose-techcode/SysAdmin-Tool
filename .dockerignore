@@ -28,8 +28,3 @@ Thumbs.db
 
 .git/
 .gitignore
-
-# Markdown
-
-*.md
-LICENSE
