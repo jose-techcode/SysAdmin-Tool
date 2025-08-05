@@ -9,22 +9,8 @@ import (
 
 func GetNETInfo() string {
 	var out bytes.Buffer
-
-	    out.WriteString("-----INPUT/OUTPUT-----\n")
-
-        // Net (IOCounters)
-
-		net_info_IOCounters, err := net.IOCounters(true)
-		if err != nil {
-			out.WriteString("Error retrieving information about net: " + err.Error() + "\n")
-	        return out.String()
-		}
-
-		for _, IO := range net_info_IOCounters {
-			fmt.Printf("Input/Output: %s\n", IO.Name)
-		}
 		
-		out.WriteString("\n-----TCP-----\n")
+		out.WriteString("-----TCP-----\n")
 
 		// Net (connections TCP)
 
