@@ -1,3 +1,9 @@
+# Logs and temporaries
+
+*.log
+*.bak
+*.tmp
+
 # IDE/Editor Settings
 
 .vscode/
@@ -17,12 +23,6 @@ Thumbs.db
 # Hidden files of backup
 
 *~
-
-# Others
-
-*.log
-*.bak
-*.tmp
 
 # Git
 
