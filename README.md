@@ -10,7 +10,7 @@ sudo dpkg -i luasys_1.0.6.deb
 
 luasys --help
 
-**Note:**
+- **Observation:**
 
 Run the CLI tool with administrator permissions (sudo) for proper operation.
 
