@@ -142,3 +142,7 @@ Feel free to open Issues or submit Pull Requests.
 # 10. License
 
 This project is licensed under the GPL 3.0.
+
+# 11. Observations
+
+In the future, maybe goreleaser will be added to manage package versions, mainly for a possible cross-platform idea as well.
