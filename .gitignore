@@ -2,6 +2,12 @@
 
 luasys
 
+# Logs and temporaries
+
+*.log
+*.bak
+*.tmp
+
 # IDE/Editor Settings
 
 .vscode/
@@ -17,9 +23,3 @@ Thumbs.db
 
 *.db
 *.sock
-
-# Others
-
-*.log
-*.bak
-*.tmp
