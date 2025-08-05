@@ -93,7 +93,7 @@ temperature, USB devices, host (kernel and operating system), net (network), and
 
 - Bash
 
-git clone github.com/jose-techcode/CLI_Luasys
+git clone https://github.com/jose-techcode/CLI_Luasys
 
 # 7. Project Folder
 
