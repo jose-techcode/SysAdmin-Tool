@@ -13,6 +13,11 @@ luasys
 .DS_Store
 Thumbs.db
 
+# Sockets and local banks
+
+*.db
+*.sock
+
 # Others
 
 *.log
