@@ -10,8 +10,6 @@ import (
 func Server() {
     e := echo.New()
 
-    // GET
-
     // All
 
     e.GET("/", func(c echo.Context) error {
