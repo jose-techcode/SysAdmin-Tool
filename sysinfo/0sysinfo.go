@@ -82,7 +82,6 @@ func Runsys() string {
 		return out.String()
 	}
 
-
 	info_lines := strings.Split(string(motherboard_info), "\n")
 
     // Iterate through a list to find the motherboard manufacturer
