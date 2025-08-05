@@ -53,7 +53,7 @@ temperature, USB devices, host (kernel and operating system), net (network), and
 - Shell Scripting: Bash
 - Framework: Echo
 - Libraries: Cobra & Gopsutil
-- Environment: Linux
+- Environment: Linux/Debian
 - File format: Makefile & Yaml 
 - Code versioning: Git
 - Containerization: Docker
