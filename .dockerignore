@@ -9,6 +9,11 @@
 .DS_Store
 Thumbs.db
 
+# Sockets and local banks
+
+*.sock
+*.db
+
 # Hidden files of backup
 
 *~
@@ -23,11 +28,6 @@ Thumbs.db
 
 .git/
 .gitignore
-
-# Docker files
-
-Dockerfile
-.dockerignore
 
 # Markdown
 
