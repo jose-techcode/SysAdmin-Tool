@@ -103,6 +103,10 @@ cd CLI_Luasys
 
 # 8. Run in Docker
 
+- Build the binary in the same directory of Dockerfile
+
+go build -o luasys
+
 - Build the image
 
 docker build -t luasys:latest .
@@ -117,7 +121,7 @@ docker run --rm --privileged luasys:latest (optional: < subcommand >)
 
 # 8.1. Run in Docker (with bash)
 
-- Execute this script to build Docker image and scan with Trivy
+- Execute this script to build binary and Docker image and scan it with Trivy
 
 ./docker_trivy.sh
 
@@ -127,7 +131,7 @@ docker run --rm --privileged luasys:latest (optional: < subcommand >)
 
 # 8.2. Run in Docker (with makefile)
 
-- Execute this makefile command to build Docker image and scan with Trivy
+- Execute this makefile command to build binary and Docker image and scan it with Trivy
 
 make image
 
@@ -145,4 +149,4 @@ This project is licensed under the GPL 3.0.
 
 # 11. Notes
 
-In the future, maybe goreleaser will be added to manage package versions, mainly for a possible cross-platform idea as well.
+In the future, maybe goreleaser will be added to manage package versions, mainly for a possible cross-platform idea as well. Tests of new technologies or features may appear. The api subcommand does not work inside Docker.
