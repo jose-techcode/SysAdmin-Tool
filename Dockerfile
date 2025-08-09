@@ -1,3 +1,5 @@
+# Use an official Ubuntu image
+
 FROM ubuntu:22.04
 
 # Update and install every utility of CLI tool Luasys
