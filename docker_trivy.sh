@@ -11,7 +11,7 @@ if [ "$EUID" -eq 0 ]; then
     exit 1
 fi
 
-# Build the image
+# Building the image
 
 docker build -t luasys:latest .
 
