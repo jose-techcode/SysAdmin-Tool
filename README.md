@@ -17,7 +17,7 @@ Run the CLI tool with administrator permissions (sudo) for proper operation.
 # 2. CLI Luasys
 
 The "CLI Luasys" is a multifunctional CLI tool for auditing, diagnosing, and monitoring hardware resources, such as CPU, GPU, motherboard, BIOS, memory (ram and swap), disk and partitions,
-temperature, USB devices, host (kernel and operating system), net (network), and processes. Net and processes do not appear in the general command, they only work in subcommands. You need administrator or sudo permission to run the CLI Luasys. By cloning the repository, you will have control of a local REST GET API.
+temperature, USB devices, host (kernel and operating system), net (network), and processes. Net and processes do not appear in the general command, they only work in subcommands. You need administrator or sudo permission to run the CLI Luasys. By cloning the repository, you will have control of a local REST GET API, Docker, Makefile and one Bash script.
 
 # 3. Features
 
@@ -53,7 +53,7 @@ temperature, USB devices, host (kernel and operating system), net (network), and
 - Shell Scripting: Bash
 - Framework: Echo
 - Libraries: Cobra & Gopsutil
-- Environment: Linux/Debian
+- Environment: Linux (Debian & Ubuntu based)
 - File format: Makefile & Yaml 
 - Code versioning: Git
 - Containerization: Docker
@@ -107,7 +107,7 @@ cd CLI_Luasys
 
 docker build -t luasys:latest .
 
-- Scan the docker image with trivy (false positives are expected)
+- Scan the Docker image with Trivy (false positives are expected)
 
 trivy image luasys:latest
 
@@ -117,7 +117,7 @@ docker run --rm --privileged luasys:latest (optional: < subcommand >)
 
 # 8.1. Run in Docker (with bash)
 
-- Execute this script to build docker image and scan with trivy tool
+- Execute this script to build Docker image and scan with Trivy
 
 ./docker_trivy.sh
 
@@ -127,7 +127,7 @@ docker run --rm --privileged luasys:latest (optional: < subcommand >)
 
 # 8.2. Run in Docker (with makefile)
 
-- Execute this makefile command to build docker image and scan with trivy tool
+- Execute this makefile command to build Docker image and scan with Trivy
 
 make image
 
