@@ -8,6 +8,8 @@ import(
 	"github.com/spf13/cobra"
 )
 
+// Command root
+
 var motherboardCmd = &cobra.Command{
 	Use: "motherboard",
 	Short: "Exibe informações da placa-mãe. Admin/Sudo.",
@@ -54,7 +56,7 @@ var motherboardCmd = &cobra.Command{
 	},
 }
 
-// Registro do subcomando
+// Subcommand registration
 
 func init() {
 	rootCmd.AddCommand(motherboardCmd)

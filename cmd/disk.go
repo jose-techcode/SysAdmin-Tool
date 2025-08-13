@@ -7,7 +7,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// Raiz do comando
+// Command root
 
 var diskCmd = &cobra.Command{
 	Use: "disk",
@@ -49,7 +49,7 @@ var diskCmd = &cobra.Command{
 	},
 }
 
-// Registro de subcomando
+// Subcommand registration
 
 func init() {
 	rootCmd.AddCommand(diskCmd)

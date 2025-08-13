@@ -8,6 +8,8 @@ import(
 	"github.com/spf13/cobra"
 )
 
+// Command root
+
 var usbCmd = &cobra.Command{
 	Use: "usb",
 	Short: "Exibe informações de dispositivos USB.",
@@ -30,7 +32,7 @@ var usbCmd = &cobra.Command{
 	},
 }
 
-// Registro do subcomando
+// Subcommand registration
 
 func init() {
 	rootCmd.AddCommand(usbCmd)

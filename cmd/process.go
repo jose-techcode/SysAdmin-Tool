@@ -7,7 +7,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// Raiz do comando
+// Command root
 
 var processesCmd = &cobra.Command{
 	Use: "processes",
@@ -26,7 +26,7 @@ var processesCmd = &cobra.Command{
 
 		for _, proc := range process_info {
 
-		// Usuário
+		// User
 
 		user_info, err := proc.Username()
 		if err != nil {
@@ -42,7 +42,7 @@ var processesCmd = &cobra.Command{
 			return
 		}
 
-		// Nome
+		// Name
 
 		name_info, err := proc.Name()
 		if err != nil {
@@ -75,7 +75,7 @@ var processesCmd = &cobra.Command{
 	},
 }
 
-// Registro de subcomando
+// Subcommand registration
 
 func init() {
 	rootCmd.AddCommand(processesCmd)

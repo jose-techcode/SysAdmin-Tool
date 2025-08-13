@@ -8,6 +8,8 @@ import(
 	"github.com/spf13/cobra"
 )
 
+// Command root
+
 var tempCmd = &cobra.Command{
 	Use: "temp",
 	Short: "Exibe informações da temperatura.",
@@ -94,7 +96,7 @@ var tempCmd = &cobra.Command{
 	},
 }
 
-// Registro do subcomando
+// Subcommand registration
 
 func init() {
 	rootCmd.AddCommand(tempCmd)

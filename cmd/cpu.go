@@ -7,6 +7,8 @@ import(
 	"github.com/spf13/cobra"
 )
 
+// Command root
+
 var cpuCmd = &cobra.Command{
 	Use: "cpu",
 	Short: "Exibe informações da CPU.",
@@ -47,7 +49,7 @@ var cpuCmd = &cobra.Command{
 	},
 }
 
-// Registro do subcomando
+// Subcommand registration
 
 func init() {
 	rootCmd.AddCommand(cpuCmd)
