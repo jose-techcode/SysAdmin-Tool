@@ -19,7 +19,7 @@ var biosCmd = &cobra.Command{
 
 		bios_info, err := exec.Command("dmidecode", "-t", "bios").Output()
 		if err != nil {
-			fmt.Println("Error retrieving information about BIOS.", err)
+			fmt.Println("Error retrieving information about BIOS. Need sudo.", err)
 			return
 		}
 
