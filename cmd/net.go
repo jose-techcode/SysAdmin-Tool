@@ -7,7 +7,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// Raiz do comando
+// Command root
 
 var netCmd = &cobra.Command{
 	Use: "net",
@@ -45,7 +45,7 @@ var netCmd = &cobra.Command{
 	},
 }
 
-// Registro do subcomando
+// Subcommand registration
 
 func init() {
 	rootCmd.AddCommand(netCmd)

@@ -7,7 +7,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// Raiz do comando
+// Command root
 
 var hostCmd = &cobra.Command{
 	Use: "host",
@@ -41,7 +41,7 @@ var hostCmd = &cobra.Command{
 	},
 }
 
-// Registro do subcomando
+// Subcommand registration
 
 func init() {
 	rootCmd.AddCommand(hostCmd)

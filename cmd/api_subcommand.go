@@ -18,6 +18,8 @@ var apiCmd = &cobra.Command{
 	},
 }
 
+// Subcommand registration
+
 func init() {
 	rootCmd.AddCommand(apiCmd)
 }

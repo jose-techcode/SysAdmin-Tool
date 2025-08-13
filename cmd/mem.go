@@ -8,7 +8,7 @@ import(
     "github.com/shirou/gopsutil/v3/mem"
 )
 
-// Raiz do comando
+// Command root
 
 var memCmd = &cobra.Command{
 	Use: "mem",
@@ -56,7 +56,7 @@ var memCmd = &cobra.Command{
 	},
 }
 
-// Registro do subcomando
+// Subcommand registration
 
 func init() {
 	rootCmd.AddCommand(memCmd)

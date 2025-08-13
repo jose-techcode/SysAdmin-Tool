@@ -8,6 +8,8 @@ import(
 	"github.com/spf13/cobra"
 )
 
+// Command root
+
 var gpuCmd = &cobra.Command{
 	Use: "gpu",
 	Short: "Exibe informações da GPU.",
@@ -43,7 +45,7 @@ var gpuCmd = &cobra.Command{
 	},
 }
 
-// Registro do subcomando
+// Subcommand registration
 
 func init() {
 	rootCmd.AddCommand(gpuCmd)
