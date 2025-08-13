@@ -149,4 +149,4 @@ This project is licensed under the GPL 3.0.
 
 # 11. Notes
 
-In the future, maybe goreleaser will be added to manage package versions, mainly for a possible cross-platform idea as well. Tests of new technologies or features may appear. The api subcommand does not work inside Docker.
+The api subcommand does not work inside Docker. In the future, maybe goreleaser will be added to manage package versions, mainly for a possible cross-platform idea as well. Tests of new technologies or features may appear.
