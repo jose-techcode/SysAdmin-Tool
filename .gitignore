@@ -2,6 +2,10 @@
 
 luasys
 
+# Package (recommended)
+
+luasys_*.deb
+
 # Logs and temporaries
 
 *.log
