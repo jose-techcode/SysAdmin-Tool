@@ -8,16 +8,18 @@ import(
 	"github.com/spf13/cobra"
 )
 
+// Command root
+
 var biosCmd = &cobra.Command{
 	Use: "bios",
-	Short: "Exibe informações da BIOS.",
+	Short: "Exibe informações da BIOS. Admin/Sudo.",
 	Run: func(cmd *cobra.Command, args []string) {
 
 		fmt.Println("-----BIOS-----")
 
 		bios_info, err := exec.Command("dmidecode", "-t", "bios").Output()
 		if err != nil {
-			fmt.Println("Error retrieving information about GPU.", err)
+			fmt.Println("Error retrieving information about BIOS.", err)
 			return
 		}
 
