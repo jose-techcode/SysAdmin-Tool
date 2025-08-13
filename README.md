@@ -4,7 +4,7 @@ Luasys tool .deb package.
 
 - To install, download the .deb file, navigate to the directory where the .deb file is located and run:
 
-sudo dpkg -i luasys_1.0.6.deb
+sudo dpkg -i luasys_1.0.7.deb
 
 - Then, run:
 
