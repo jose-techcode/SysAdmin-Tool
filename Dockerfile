@@ -14,6 +14,9 @@ RUN apt update && apt install -y \
 # Copy the binary
 
 COPY luasys /usr/local/bin/luasys
+
+# Gives permission to the binary
+
 RUN chmod +x /usr/local/bin/luasys
 
 # Command of binary
