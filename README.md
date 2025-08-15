@@ -4,11 +4,11 @@ Luasys tool .deb package.
 
 - To install, download the .deb file, navigate to the directory where the .deb file is located and run:
 
-sudo dpkg -i luasys_1.0.8.deb
+`sudo dpkg -i luasys_1.0.9.deb`
 
 - Then, run:
 
-luasys --help
+`luasys --help`
 
 - **Note:**
 
@@ -21,31 +21,31 @@ temperature, USB devices, host (kernel and operating system), net (network), and
 
 # 3. Features
 
-- luasys - Displays general information, excluding net and process.
+- `luasys` - Displays general information, excluding net and process.
 
-- api - Starts the API HTTP server. Localhost. The api subcommand does not work inside Docker.
+- `api` - Starts the API HTTP server. Localhost. The api subcommand does not work inside Docker.
 
-- cpu - Shows CPU information.
+- `cpu` - Shows CPU information.
 
-- gpu - Shows GPU information.
+- `gpu` - Shows GPU information.
 
-- motherboard - Shows motherboard information.
+- `motherboard` - Shows motherboard information.
 
-- bios - Shows BIOS information.
+- `bios` - Shows BIOS information.
 
-- mem - Shows memory information.
+- `mem` - Shows memory information.
 
-- disk - Shows disk information.
+- `disk` - Shows disk information.
 
-- temp - Shows temperature information.
+- `temp` - Shows temperature information.
 
-- usb - Shows USB device information.
+- `usb` - Shows USB device information.
 
-- host - Shows kernel and operating system information.
+- `host` - Shows kernel and operating system information.
 
-- net - Shows network information. It works only through subcommand.
+- `net` - Shows network information. It works only through subcommand.
 
-- processes - Shows process information. It works only through subcommand.
+- `processes` - Shows process information. It works only through subcommand.
 
 # 4. Technologies
 
@@ -93,51 +93,51 @@ temperature, USB devices, host (kernel and operating system), net (network), and
 
 - Bash
 
-git clone https://github.com/jose-techcode/CLI_Luasys
+`git clone https://github.com/jose-techcode/CLI_Luasys`
 
 # 7. Project Folder
 
 - Bash
 
-cd CLI_Luasys
+`cd CLI_Luasys`
 
 # 8. Run in Docker
 
 - Build the binary in the same directory of Dockerfile
 
-go build -o luasys
+`go build -o luasys`
 
 - Build the image
 
-docker build -t luasys:latest .
+`docker build -t luasys:latest .`
 
 - Scan the Docker image with Trivy (false positives are expected)
 
-trivy image luasys:latest
+`trivy image luasys:latest`
 
 - Run the image with privileges
 
-docker run --rm --privileged luasys:latest (optional: < subcommand >)
+`docker run --rm --privileged luasys:latest` (optional: < subcommand >)
 
 # 8.1. Run in Docker (with bash)
 
 - Execute this script to build binary and Docker image and scan it with Trivy
 
-./docker_trivy.sh
+`./docker_trivy.sh`
 
 - Run the image with privileges
 
-docker run --rm --privileged luasys:latest (optional: < subcommand >)
+`docker run --rm --privileged luasys:latest` (optional: < subcommand >)
 
 # 8.2. Run in Docker (with makefile)
 
 - Execute this makefile command to build binary and Docker image and scan it with Trivy
 
-make image
+`make image`
 
 - Run the image with privileges
 
-docker run --rm --privileged luasys:latest (optional: < subcommand >)
+`docker run --rm --privileged luasys:latest` (optional: < subcommand >)
 
 # 9. Contribute
 
