@@ -4,7 +4,7 @@ Luasys tool .deb package.
 
 - To install, download the .deb file, navigate to the directory where the .deb file is located and run:
 
-`sudo dpkg -i luasys_1.0.9.deb`
+`sudo dpkg -i luasys_1.0.8.deb`
 
 - Then, run:
 
@@ -21,17 +21,17 @@ temperature, USB devices, host (kernel and operating system), net (network), and
 
 # 3. Features
 
-- `luasys` - Displays general information, excluding net and process.
+- `luasys` - Displays general information, excluding net and process. Admin/Sudo.
 
-- `api` - Starts the API HTTP server. Localhost. The api subcommand does not work inside Docker.
+- `api` - Starts the API HTTP server. Localhost. The api subcommand does not work inside Docker. Admin/Sudo.
 
 - `cpu` - Shows CPU information.
 
 - `gpu` - Shows GPU information.
 
-- `motherboard` - Shows motherboard information.
+- `motherboard` - Shows motherboard information. Admin/Sudo.
 
-- `bios` - Shows BIOS information.
+- `bios` - Shows BIOS information. Admin/Sudo.
 
 - `mem` - Shows memory information.
 
@@ -65,29 +65,29 @@ temperature, USB devices, host (kernel and operating system), net (network), and
 
 - GET: Displays auditing, diagnostic, and monitoring information via an HTTP server via API.
 
-- / - General path, excluding net and process.
+- `/` - General path, excluding net and process. Admin/Sudo.
 
-- /cpu - CPU path.
+- `/cpu` - CPU path.
 
-- /gpu - GPU path.
+- `/gpu` - GPU path.
 
-- /motherboard - Motherboard path.
+- `/motherboard` - Motherboard path. Admin/Sudo.
 
-- /bios - BIOS path.
+- `/bios` - BIOS path. Admin/Sudo.
 
-- /mem - Memory path.
+- `/mem` - Memory path.
 
-- /disk - Disk path.
+- `/disk` - Disk path.
 
-- /temperature - Temperature path.
+- `/temperature` - Temperature path.
 
-- /usb - USB device path.
+- `/usb` - USB device path.
 
-- /host - Kernel and operating system path.
+- `/host` - Kernel and operating system path.
 
-- /net - Network path. It only works through a specific route.
+- `/net` - Network path. It only works through a specific route.
 
-- /processes - Process path. It only works through a specific route.
+- `/processes` - Process path. It only works through a specific route.
 
 # 6. Clone the Repository
 
@@ -149,4 +149,4 @@ This project is licensed under the GPL 3.0.
 
 # 11. Notes
 
-The api subcommand does not work inside Docker. In the future, maybe goreleaser will be added to manage package versions, mainly for a possible cross-platform idea as well. Tests of new technologies or features may appear.
+The api subcommand does not work inside Docker. In the future, maybe goreleaser will be added to manage package versions, mainly for a possible cross-platform idea as well. Tests of new technologies or features may appear. Finished.
