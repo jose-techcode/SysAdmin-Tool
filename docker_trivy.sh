@@ -13,12 +13,12 @@ fi
 
 # Building the binary
 
-go build -o luasys
+go build -o sys
 
 # Building the image
 
-docker build -t luasys:latest .
+docker build -t sys:latest .
 
 # Scan the docker image with trivy tool (false positives are expected)
 
-trivy image luasys:latest
+trivy image sys:latest

@@ -1,6 +1,6 @@
 # Use an official Ubuntu image
 
-FROM ubuntu:22.04
+FROM debian:latest
 
 # Update and install every utility of CLI tool Luasys
 
@@ -13,12 +13,12 @@ RUN apt update && apt install -y \
 
 # Copy the binary
 
-COPY luasys /usr/local/bin/luasys
+COPY sys /usr/local/bin/sys
 
 # Gives permission to the binary
 
-RUN chmod +x /usr/local/bin/luasys
+RUN chmod +x /usr/local/bin/sys
 
 # Command of binary
 
-ENTRYPOINT ["/usr/local/bin/luasys"]
+ENTRYPOINT ["/usr/local/bin/sys"]

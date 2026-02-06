@@ -1,10 +1,10 @@
 # Binary (recommended)
 
-luasys
+sys
 
 # Package (recommended)
 
-luasys_*.deb
+sys_*.deb
 
 # Logs and temporaries
 
