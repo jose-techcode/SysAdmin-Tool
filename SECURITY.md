@@ -6,6 +6,8 @@ Thank you for caring about the security of this project! To report a security vu
 
 - Report to the repository's owner's email address.
 
+- Open a issue or pull request in repository.
+
 # 3. What to Avoid
 
 - Do not publicly disclose vulnerabilities before we have a chance to resolve them.
@@ -19,6 +21,3 @@ Thank you for caring about the security of this project! To report a security vu
 - We will work to fix the vulnerability as quickly as possible.
 
 - We appreciate your contribution to keeping this project secure!
-
---
-Thank you for helping keep this project secure!
