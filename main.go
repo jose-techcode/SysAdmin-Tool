@@ -2,9 +2,8 @@ package main
 
 // Importing into cmd folder to call main function
 
-import(	
-	"github.com/jose-techcode/CLI_Luasys/cmd"
-
+import (
+	"github.com/jose-techcode/SysAdmin-Tool/cmd"
 )
 
 // Function that calls everything
