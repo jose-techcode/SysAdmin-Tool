@@ -1,14 +1,14 @@
 # 1. Installation
 
-Luasys tool .deb package.
+Sys tool .deb package.
 
 - To install, download the .deb file, navigate to the directory where the .deb file is located and run:
 
-`sudo dpkg -i luasys_1.0.8.deb`
+`sudo dpkg -i sys_1.0.9.deb`
 
 - Then, run:
 
-`luasys --help`
+`sys --help`
 
 - **Note:**
 
@@ -16,12 +16,11 @@ Run the CLI tool with administrator permissions (sudo) for proper operation.
 
 # 2. CLI Luasys
 
-The "CLI Luasys" is a multifunctional CLI tool for auditing, diagnosing, and monitoring hardware resources, such as CPU, GPU, motherboard, BIOS, memory (ram and swap), disk and partitions,
-temperature, USB devices, host (kernel and operating system), net (network), and processes. Net and processes do not appear in the general command, they only work in subcommands. You need administrator or sudo permission to run the CLI Luasys.
+The "SysAdmin-Tool" is am CLI tool for auditing, diagnosing, and monitoring hardware resources, such as CPU, GPU, motherboard, BIOS, memory (ram and swap), disk and partitions, USB devices, host (kernel and operating system), net (network), and processes. Net and processes do not appear in the general command, they only work in subcommands. You need administrator or sudo permission to run the CLI Sys
 
 # 3. Features
 
-- `luasys` - Displays general information, excluding net and process. Admin/Sudo.
+- `sys` - Displays general information, excluding net and process. Admin/Sudo.
 
 - `api` - Starts the API HTTP server. Localhost. The api subcommand does not work inside Docker. Admin/Sudo.
 
@@ -37,8 +36,6 @@ temperature, USB devices, host (kernel and operating system), net (network), and
 
 - `disk` - Shows disk information.
 
-- `temp` - Shows temperature information.
-
 - `usb` - Shows USB device information.
 
 - `host` - Shows kernel and operating system information.
@@ -49,17 +46,16 @@ temperature, USB devices, host (kernel and operating system), net (network), and
 
 # 4. Technologies
 
-- Language: Golang
-- Shell Scripting: Bash
-- Framework: Echo
-- Libraries: Cobra & Gopsutil
-- Environment: Linux (Debian & Ubuntu based)
-- File format: Makefile & Yaml 
-- Code versioning: Git
-- Containerization: Docker
+- Language: Go (1.25.7+)
+- Shell Scripting: Bash (5.3+)
+- Framework: Echo (4.15.0+)
+- Libraries: Cobra (1.10.2+) & Gopsutil(3.24.5+)
+- Environment: Linux/Debian(13+)/Fedora(42+)
+- Code versioning: Git (2.53.0+)
+- Containerization: Docker (29.2.1+)
+- Scanner: Trivy (0.69.1+)
 - CI: Github Actions
-- Scanner (docker image): Trivy
-- Others: dmidecode, lspci, sensors, and lsusb
+- Others: dmidecode, pciutils, usbutils
 
 # 5. API
 
@@ -79,8 +75,6 @@ temperature, USB devices, host (kernel and operating system), net (network), and
 
 - `/disk` - Disk path.
 
-- `/temperature` - Temperature path.
-
 - `/usb` - USB device path.
 
 - `/host` - Kernel and operating system path.
@@ -93,31 +87,31 @@ temperature, USB devices, host (kernel and operating system), net (network), and
 
 - Bash
 
-`git clone https://github.com/jose-techcode/CLI_Luasys`
+`git clone https://github.com/jose-techcode/SysAdmin-Tool`
 
 # 7. Project Folder
 
 - Bash
 
-`cd CLI_Luasys`
+`cd SysAdmin-Tool`
 
 # 8. Run in Docker
 
 - Build the binary in the same directory of Dockerfile
 
-`go build -o luasys`
+`go build -o sys`
 
 - Build the image
 
-`docker build -t luasys:latest .`
+`docker build -t sys:latest .`
 
 - Scan the Docker image with Trivy (false positives are expected)
 
-`trivy image luasys:latest`
+`trivy image sys:latest`
 
 - Run the image with privileges
 
-`docker run --rm --privileged luasys:latest` (optional: < subcommand >)
+`docker run --rm --privileged sys:latest` (optional: < subcommand >)
 
 # 8.1. Run in Docker (with bash)
 
@@ -127,7 +121,7 @@ temperature, USB devices, host (kernel and operating system), net (network), and
 
 - Run the image with privileges
 
-`docker run --rm --privileged luasys:latest` (optional: < subcommand >)
+`docker run --rm --privileged sys:latest` (optional: < subcommand >)
 
 # 8.2. Run in Docker (with makefile)
 
@@ -137,7 +131,7 @@ temperature, USB devices, host (kernel and operating system), net (network), and
 
 - Run the image with privileges
 
-`docker run --rm --privileged luasys:latest` (optional: < subcommand >)
+`docker run --rm --privileged sys:latest` (optional: < subcommand >)
 
 # 9. Contribute
 
