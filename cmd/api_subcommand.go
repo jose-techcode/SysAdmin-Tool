@@ -7,14 +7,14 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// API REST (GET)
+// REST API (GET)
 
 var apiCmd = &cobra.Command{
-	Use: "api",
+	Use:   "api",
 	Short: "Starts the API HTTP server. Localhost.",
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("Starting HTTP server on port 8000")
-		api.Server()
+		apiSysinfo.Server()
 	},
 }
 
