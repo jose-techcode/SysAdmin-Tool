@@ -11,7 +11,7 @@ import (
 
 var netCmd = &cobra.Command{
 	Use: "net",
-	Short: "Exibe informações da rede.",
+	Short: "Shows network (TCP and UDP) information",
 	Run: func(cmd *cobra.Command, args []string) {
 		
 		fmt.Println("-----TCP-----")

@@ -12,7 +12,7 @@ import(
 
 var gpuCmd = &cobra.Command{
 	Use: "gpu",
-	Short: "Exibe informações da GPU.",
+	Short: "Shows GPU information",
 	Run: func(cmd *cobra.Command, args []string) {
 		
 		fmt.Println("-----GPU-----")

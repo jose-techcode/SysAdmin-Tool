@@ -12,7 +12,7 @@ import(
 
 var motherboardCmd = &cobra.Command{
 	Use: "motherboard",
-	Short: "Exibe informações da placa-mãe. Admin/Sudo.",
+	Short: "Shows Motherboard information Admin/Sudo.",
 	Run: func(cmd *cobra.Command, args []string) {
 		
 		fmt.Println("-----MOTHERBOARD-----")

@@ -11,7 +11,7 @@ import (
 
 var diskCmd = &cobra.Command{
 	Use: "disk",
-	Short: "Exibe informações do disco.",
+	Short: "Shows disk information",
 	Run: func(cmd *cobra.Command, args []string) {
 
 		fmt.Println("-----DISK-----")

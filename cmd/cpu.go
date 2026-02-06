@@ -11,7 +11,7 @@ import(
 
 var cpuCmd = &cobra.Command{
 	Use: "cpu",
-	Short: "Exibe informações da CPU.",
+	Short: "Shows CPU information",
 	Run: func(cmd *cobra.Command, args []string) {
 		
 		fmt.Printf("-----CPU-----\n")

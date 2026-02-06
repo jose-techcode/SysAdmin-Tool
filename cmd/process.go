@@ -11,7 +11,7 @@ import (
 
 var processesCmd = &cobra.Command{
 	Use: "processes",
-	Short: "Exibe informações de processos.",
+	Short: "Shows processes information",
 	Run: func(cmd *cobra.Command, args []string) {
 
 		fmt.Println("-----PROCESSESES-----")

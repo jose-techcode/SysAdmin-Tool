@@ -12,7 +12,7 @@ import(
 
 var tempCmd = &cobra.Command{
 	Use: "temp",
-	Short: "Exibe informações da temperatura.",
+	Short: "Shows temperature information",
 	Run: func(cmd *cobra.Command, args []string) {
 
 		fmt.Println("-----TEMPERATURE-----")

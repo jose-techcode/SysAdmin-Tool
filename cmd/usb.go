@@ -12,7 +12,7 @@ import(
 
 var usbCmd = &cobra.Command{
 	Use: "usb",
-	Short: "Exibe informações de dispositivos USB.",
+	Short: "Shows USB device information.",
 	Run: func(cmd *cobra.Command, args []string) {
 
 		fmt.Printf("-----USB-----")

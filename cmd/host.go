@@ -11,7 +11,7 @@ import (
 
 var hostCmd = &cobra.Command{
 	Use: "host",
-	Short: "Exibe informações do kernel e do sistema operacional.",
+	Short: "Shows kernel and operating system information",
 	Run: func(cmd *cobra.Command, args []string) {
 
 		fmt.Println("-----KERNEL-----")

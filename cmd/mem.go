@@ -12,7 +12,7 @@ import(
 
 var memCmd = &cobra.Command{
 	Use: "mem",
-	Short: "Exibe informações da memória.",
+	Short: "Shows memory information",
 	Run: func(cmd *cobra.Command, args []string) {
 
         fmt.Println("-----RAM-----")

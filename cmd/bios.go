@@ -12,7 +12,7 @@ import(
 
 var biosCmd = &cobra.Command{
 	Use: "bios",
-	Short: "Exibe informações da BIOS. Admin/Sudo.",
+	Short: "Shows BIOS information. Admin/Sudo.",
 	Run: func(cmd *cobra.Command, args []string) {
 
 		fmt.Println("-----BIOS-----")

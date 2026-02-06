@@ -3,7 +3,7 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/jose-techcode/CLI_Luasys/api"
+	"github.com/jose-techcode/SysAdmin-Tool/apiSysinfo"
 	"github.com/spf13/cobra"
 )
 
@@ -11,9 +11,9 @@ import (
 
 var apiCmd = &cobra.Command{
 	Use: "api",
-	Short: "Inicia servidor HTTP da API. Localhost.",
+	Short: "Starts the API HTTP server. Localhost.",
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("Iniciando servidor HTTP na porta 8000...")
+		fmt.Println("Starting HTTP server on port 8000")
 		api.Server()
 	},
 }
