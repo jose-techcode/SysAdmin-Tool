@@ -1,10 +1,10 @@
-package api
+package apiSysinfo
 
 import (
     "net/http"
 
     "github.com/labstack/echo/v4"
-    "github.com/jose-techcode/CLI_Luasys/sysinfo"
+    "github.com/jose-techcode/SysAdmin-Tool/sysinfo"
 )
 
 func Server() {
