@@ -1,13 +1,12 @@
-# Use an official Ubuntu image
+# Use an official Debian image
 
 FROM debian:latest
 
-# Update and install every utility of CLI tool Luasys
+# Update and install every utility of CLI Tool Sys (Debian)
 
 RUN apt update && apt install -y \
     dmidecode \
     pciutils \
-    lm-sensors \
     usbutils \
     && apt clean
 
