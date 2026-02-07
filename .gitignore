@@ -27,3 +27,7 @@ Thumbs.db
 
 *.db
 *.sock
+
+# Added by goreleaser init:
+
+dist/
