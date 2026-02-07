@@ -1,10 +1,14 @@
 # 1. Installation
 
-Sys tool .deb package.
+Sys tool .tar.gz package
 
-- To install, download the .deb file, navigate to the directory where the .deb file is located and run:
+- To install, download the .tar.gz, navigate to the directory where the .tar.gz file is located and run:
 
-`sudo dpkg -i sys_1.0.9.deb`
+`tar -xzvf SysAdmin-Tool_Linux_x86_64.tar.gz`
+
+- Move to /usr/local/bin/
+
+`sudo mv sys /usr/local/bin/`
 
 - Then, run:
 
@@ -95,52 +99,10 @@ The "SysAdmin-Tool" is am CLI tool for auditing, diagnosing, and monitoring hard
 
 `cd SysAdmin-Tool`
 
-# 8. Run in Docker
-
-- Build the binary in the same directory of Dockerfile
-
-`go build -o sys`
-
-- Build the image
-
-`docker build -t sys:latest .`
-
-- Scan the Docker image with Trivy (false positives are expected)
-
-`trivy image sys:latest`
-
-- Run the image with privileges
-
-`docker run --rm --privileged sys:latest` (optional: < subcommand >)
-
-# 8.1. Run in Docker (with bash)
-
-- Execute this script to build binary and Docker image and scan it with Trivy
-
-`./docker_trivy.sh`
-
-- Run the image with privileges
-
-`docker run --rm --privileged sys:latest` (optional: < subcommand >)
-
-# 8.2. Run in Docker (with makefile)
-
-- Execute this makefile command to build binary and Docker image and scan it with Trivy
-
-`make image`
-
-- Run the image with privileges
-
-`docker run --rm --privileged sys:latest` (optional: < subcommand >)
-
-- **Note:**
-
-The api subcommand does not work inside Docker.
-
-# 9. Contribute
+# 8. Contribute
 
 Feel free to open Issues or submit Pull Requests.
 
-# 10. License
+# 9. License
 
 This project is licensed under the GPL 3.0.
