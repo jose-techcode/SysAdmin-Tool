@@ -1,8 +1,0 @@
-Package: sys
-Version: 1.0.9
-Section: utils
-Priority: optional
-Architecture: amd64
-Maintainer: José <walterandrade0001@gmail.com>
-Description: An CLI tool for auditing, diagnosing, and monitoring hardware resources.
- This CLI tool needs admin/sudo.
