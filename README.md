@@ -26,7 +26,7 @@ The SysAdmin Tool is am CLI tool for auditing, diagnosing, and monitoring hardwa
 
 - `sys` - Displays general information, excluding net and process. Admin/Sudo.
 
-- `api` - Starts the API HTTP server. Localhost. The api subcommand does not work inside Docker. Admin/Sudo.
+- `api` - Starts the API HTTP server. Localhost. Admin/Sudo.
 
 - `cpu` - Shows CPU information.
 
@@ -51,13 +51,10 @@ The SysAdmin Tool is am CLI tool for auditing, diagnosing, and monitoring hardwa
 # 4. Technologies
 
 - Language: Go (1.25.7+)
-- Shell Scripting: Bash (5.3+)
 - Framework: Echo (4.15.0+)
-- Libraries: Cobra (1.10.2+) & Gopsutil(3.24.5+)
+- Libraries: Cobra (1.10.2+) & Gopsutil (3.24.5+)
 - Environment: Linux/Debian(13+)/Fedora(42+)
 - Code versioning: Git (2.53.0+)
-- Containerization: Docker (29.2.1+)
-- Scanner: Trivy (0.69.1+)
 - CI: Github Actions
 - Others: dmidecode, pciutils, usbutils
 
