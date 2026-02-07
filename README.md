@@ -16,7 +16,7 @@ Run the CLI tool with administrator permissions (sudo) for proper operation.
 
 # 2. CLI Luasys
 
-The "SysAdmin-Tool" is am CLI tool for auditing, diagnosing, and monitoring hardware resources, such as CPU, GPU, motherboard, BIOS, memory (ram and swap), disk and partitions, USB devices, host (kernel and operating system), net (network), and processes. Net and processes do not appear in the general command, they only work in subcommands. You need administrator or sudo permission to run the CLI Sys
+The "SysAdmin-Tool" is am CLI tool for auditing, diagnosing, and monitoring hardware resources, such as CPU, GPU, motherboard, BIOS, memory, disk and partitions, USB devices, host (kernel and operating system), net (network), and processes. Net and processes do not appear in the general command, they only work in subcommands. You need administrator or sudo permission to run the CLI Tool Sys.
 
 # 3. Features
 
@@ -133,6 +133,10 @@ The "SysAdmin-Tool" is am CLI tool for auditing, diagnosing, and monitoring hard
 
 `docker run --rm --privileged sys:latest` (optional: < subcommand >)
 
+- **Note:**
+
+The api subcommand does not work inside Docker.
+
 # 9. Contribute
 
 Feel free to open Issues or submit Pull Requests.
@@ -140,7 +144,3 @@ Feel free to open Issues or submit Pull Requests.
 # 10. License
 
 This project is licensed under the GPL 3.0.
-
-# 11. Notes
-
-The api subcommand does not work inside Docker. In the future, maybe goreleaser will be added to manage package versions, mainly for a possible cross-platform idea as well. Tests of new technologies or features may appear. Finished.
