@@ -18,9 +18,9 @@ Sys tool .tar.gz package
 
 Run the CLI tool with administrator permissions (sudo) for proper operation.
 
-# 2. CLI Luasys
+# 2. SysAdmin Tool
 
-The "SysAdmin-Tool" is am CLI tool for auditing, diagnosing, and monitoring hardware resources, such as CPU, GPU, motherboard, BIOS, memory, disk and partitions, USB devices, host (kernel and operating system), net (network), and processes. Net and processes do not appear in the general command, they only work in subcommands. You need administrator or sudo permission to run the CLI tool.
+The SysAdmin Tool is am CLI tool for auditing, diagnosing, and monitoring hardware resources, such as CPU, GPU, motherboard, BIOS, memory, disk and partitions, USB devices, host (kernel and operating system), net (network), and processes. Net and processes do not appear in the general command, they only work in subcommands. You need administrator or sudo permission to run the CLI tool.
 
 # 3. Features
 
