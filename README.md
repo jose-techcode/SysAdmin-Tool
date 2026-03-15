@@ -26,8 +26,6 @@ The SysAdmin Tool is an CLI tool for auditing, diagnosing, and monitoring hardwa
 
 - `sys` - Displays general information, excluding net and process. Admin/Sudo.
 
-- `api` - Starts the API HTTP server. Localhost. Admin/Sudo.
-
 - `cpu` - Shows CPU information.
 
 - `gpu` - Shows GPU information.
