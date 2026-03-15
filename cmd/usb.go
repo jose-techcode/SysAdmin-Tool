@@ -1,6 +1,6 @@
 package cmd
 
-import(
+import (
 	"fmt"
 	"os/exec"
 	"strings"
@@ -11,8 +11,8 @@ import(
 // Command root
 
 var usbCmd = &cobra.Command{
-	Use: "usb",
-	Short: "Shows USB device information.",
+	Use:   "usb",
+	Short: "Shows USB device information",
 	Run: func(cmd *cobra.Command, args []string) {
 
 		fmt.Printf("-----USB-----")
