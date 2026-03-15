@@ -1,6 +1,6 @@
 package cmd
 
-import(
+import (
 	"fmt"
 	"os/exec"
 	"strings"
@@ -11,10 +11,10 @@ import(
 // Command root
 
 var motherboardCmd = &cobra.Command{
-	Use: "motherboard",
-	Short: "Shows Motherboard information Admin/Sudo.",
+	Use:   "motherboard",
+	Short: "Shows Motherboard information. Admin/Sudo.",
 	Run: func(cmd *cobra.Command, args []string) {
-		
+
 		fmt.Println("-----MOTHERBOARD-----")
 
 		motherboard_info, err := exec.Command("dmidecode", "-t", "2").Output()
@@ -23,13 +23,13 @@ var motherboardCmd = &cobra.Command{
 			return
 		}
 
-	    info_text := string(motherboard_info)
+		info_text := string(motherboard_info)
 
 		info_lines := strings.Split(info_text, "\n")
 
 		// Iterate through a list to find the motherboard manufacturer
 
-        for _, info_line := range info_lines {
+		for _, info_line := range info_lines {
 			if strings.Contains(info_line, "Manufacturer") {
 				parts := strings.SplitN(info_line, ":", 2)
 				if len(parts) == 2 {
