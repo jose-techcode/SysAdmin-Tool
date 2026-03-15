@@ -2,10 +2,6 @@
 
 sys
 
-# Package (recommended)
-
-sys_*.deb
-
 # Logs and temporaries
 
 *.log
